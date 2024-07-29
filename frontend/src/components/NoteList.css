@@ -1,0 +1,74 @@
+.list-notes-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-list-container {
+  width: 100%;
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: scroll;
+  height: 25vh;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.note-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for other browsers */
+.note-list-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.note {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #df0a0a;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.note-content {
+  flex-grow: 1;
+  margin: 7px;
+}
+
+.delete-button {
+  position: absolute;
+  top: -15px; /* Position adjustment */
+  right: -10px; /* Position adjustment */
+  width: 2px;
+  height: 4px;
+  background: #df0a0a;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background: #df0a0a;
+}

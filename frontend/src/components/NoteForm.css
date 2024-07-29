@@ -1,0 +1,51 @@
+.note-form {
+  max-width: 50vw;
+  max-height: 50vh;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+ 
+  background-size: cover; /* Ensures the image covers the whole element */
+  background-position: center; /* Centers the image in the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Sets the text color to white for better contrast */
+}
+
+.note-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Allows the textarea to be resizable vertically */
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly opaque background for readability */
+}
+
+.note-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.note-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-form button:hover {
+  background-color: #0056b3;
+}
